@@ -1,0 +1,80 @@
+.flex-bubble-container {
+	float: left;
+	width: 100%;
+
+	display: -webkit-flex; /* Safari */
+	display: flex;
+}
+
+.flex-bubble {
+	float: left;
+	text-align: center;
+
+	-webkit-flex: 1;  /* Safari 6.1+ */
+	-ms-flex: 1;  /* IE 10 */  
+	flex: 1;
+
+	transition: all 290ms ease;
+}
+
+.flex-bubble:hover {
+	text-decoration: none;
+}
+
+.flex-bubble img {
+	box-shadow: none;
+	border: none;
+}
+
+.flex-bubble img:hover {
+	box-shadow: none;
+	border: none;
+}
+
+.flex-bubble h2 {
+	border-bottom: none;
+	font-size: 1.5em;
+}
+
+.flex-bubble .image-link {
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1050px) {
+	.flex-bubble-container {
+		display: block;
+	}
+
+	.flex-bubble {
+		width: calc(100% - 1em) !important;
+	}
+}
+
+.international-school {
+	background: linear-gradient(155deg, rgb(255, 255, 255) 0%, rgb(167, 227, 245) 60%);
+}
+
+.practical-japanese {
+	/*background-color: rgb(255, 196, 198);*/
+	background: linear-gradient(155deg, rgb(255, 255, 255) 0%, rgb(255, 196, 198) 60%);
+}
+
+.cultural-experience {
+	/*background-color: rgb(206, 241, 167);*/
+	background: linear-gradient(155deg, rgb(255, 255, 255) 0%, rgb(206, 255, 167) 60%);
+}
+
+.international-school:hover {
+	box-shadow: 0 0 8px rgb(167, 227, 245);
+}
+
+.practical-japanese:hover {
+	box-shadow: 0 0 8px rgb(255, 196, 198);
+}
+
+.cultural-experience:hover {
+	box-shadow: 0 0 8px rgb(206, 241, 167);
+}

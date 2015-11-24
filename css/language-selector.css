@@ -1,0 +1,75 @@
+.lang_sel_list_vertical,
+.lang_sel_list_vertical ul,
+.lang_sel_list_vertical ul li,
+.lang_sel_list_horizontal,
+.lang_sel_click {
+	width: 100% !important;
+	border: none !important;
+	background: transparent !important;
+	float: left;
+}
+
+.lang_sel_click ul {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.lang_sel_list_horizontal ul {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.lang_sel_click li,
+.lang_sel_list_horizontal li {
+	list-style-type: none !important;
+	float: left;
+	margin: 0;
+}
+
+.lang_sel_click ul li a,
+#lang_sel_list li a {
+	float: left;
+	display: block;
+	width: 18px;
+	height: 12px;
+
+	font-size: 0em !important;
+	margin: 5px 8px !important;
+	/*border: 1px solid transparent;*/
+	border-radius: 3px !important;
+	color: rgb(<?php echo $rgbText; ?>) !important;
+	background: transparent !important;
+}
+
+.lang_sel_click ul,
+#lang_sel_list {
+	font-family: "Open Sans", sans-serif !important;
+	height: auto !important;
+}
+
+.lang_sel_click a:hover,
+.lang_sel_sel:hover,
+.lang_sel_other:hover {
+	color: rgb(<?php echo $rgbTextHover; ?>) !important;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+	/*background: rgb(<?php echo $rgbHover; ?>) !important;*/
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.3) !important;
+	text-decoration: none;
+	/*border: 1px solid rgb(0, 0, 0) !important;*/
+}
+
+.lang_sel_sel {
+	font-weight: bold;
+}
+
+.iclflag {
+	float: left;
+	display: block;
+	/*border: 1px solid rgba(4, 4, 4, 0.1);*/
+	width: 18px;
+	height: 12px;
+	border: none;
+}

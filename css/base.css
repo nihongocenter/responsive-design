@@ -1,0 +1,252 @@
+body {
+	font-size: 90%;
+	float: left;
+	width: 100%;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+.site {
+	float: left;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.site-info {
+	float: left;
+	width: auto;
+}
+
+a, a:visited {
+	color: rgb(32, 32, 32);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(4, 4, 4);
+	text-decoration: underline;
+	/*text-shadow: 0 0 8px rgba(<?php echo $rgb; ?>, 0.2);*/
+}
+
+article,
+.bubble,
+.page-header,
+.comments-area,
+.widget,
+.site-footer,
+.post-navigation,
+.footer-navigation,
+.flex-bubble {
+	float: left;
+	padding: 1em;
+	margin: 0.5em !important;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	width: calc(100% - 1em);
+	max-width: calc(100% - 1em);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+	line-height: 1.6em;
+	transition: all 200ms ease;
+	opacity: 0.97;
+}
+
+article,
+.flex-bubble,
+.site-header {
+	opacity: 0.99;
+}
+
+article:hover,
+.bubble:hover,
+.page-header:hover,
+.comments-area:hover,
+.widget:hover,
+.site-footer:hover,
+.post-navigation:hover,
+.footer-navigation:hover,
+.flex-bubble:hover {
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+	opacity: 1;
+}
+
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6,
+.content-area ul,
+.content-area ol,
+.entry-meta {
+	float: left;
+	width: 100%;
+}
+
+.entry-meta {
+	opacity: 0.5;
+}
+
+.entry-content > p {
+	float: left !important;
+	width: 100% !important;
+	margin: 0.5em 0;
+}
+
+h1 {
+	display: none;
+}
+
+.content-area h2 {
+	font-size: 1.8em;
+	line-height: 1.7em;
+	margin: 0.5em 0;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.content-area h3 {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	margin: 0.5em 0;
+}
+
+.content-area h4 {
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin: 0.5em 0;
+}
+
+.content-area {
+	float: left;
+	width: calc(100% - 300px);
+}
+
+.widget-area {
+	float: right;
+	width: 300px;
+}
+
+.table {
+	float: left;
+	width: 100% !important;
+	padding
+}
+
+.table td, .table th {
+	padding: 0.5em 0.8em !important;
+	border: 1px solid rgb(210, 210, 210);
+}
+
+@media screen and (max-width: 750px) {
+	.content-area {
+		width: 100%;
+	}
+
+	.widget-area {
+		float: left;
+		width: 100%;
+	}
+
+	.youtube-introduction img {
+		content: url("http://nihongo-center.com/wp-content/themes/nihongo-center-responsive/img/youtube-english-354p.jpg");
+	}
+
+	* {
+		opacity: 1 !important;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.site {
+		position: absolute;
+		left: calc(50% - 800px);
+		max-width: 1600px;
+	}
+}
+
+.widget-area h1 {
+	font-size: 1.2em;
+}
+
+.widget_text img {
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, 0.9);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	opacity: 0.95;
+}
+
+.widget_text img:hover {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+	opacity: 1.0;
+	transition: all 290ms ease;
+}
+
+aside h2 {
+	display: none;
+}
+
+input[type="search"] {
+	width: calc(100% - 8px);
+}
+
+.email:after {
+	content: "support\40nihongo-center.com";
+}
+
+.site-branding {
+	float: left;
+}
+
+.edit-link {
+	float: right;
+}
+
+.readmore {
+	text-align: right;
+}
+
+ul, ol {
+	margin-left: 0;
+}
+
+.nav-previous:before {
+	content: "< ";
+}
+
+.nav-next:after {
+	content: " >";
+}
+
+div[itemprop="address"] {
+	display: none;
+}
+
+dt {
+	font-size: 1.2em;
+	line-height>: 1.6em;
+	margin: 0.4em 0;
+}
+
+.apply-now {
+	text-align: left;
+	font-size: 130%;
+	color: rgb(242, 248, 255) !important;
+	background: url("https://nihongo-center.com/wp-content/themes/nihongo-center-responsive/img/apply-now.png");
+	background-size: cover;
+	transition: all 200ms ease;
+	text-shadow: none;
+	padding-left: 1.3em;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.apply-now:hover {
+	text-decoration: none;
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+	/*box-shadow: 0 0 24px rgba(92, 242, 255, 0.75);*/
+	box-shadow: 0 0 24px rgba(255, 242, 32, 0.75);
+	transform: scale(1.03);
+}
+
+.tagline {
+	font-size: 85%;
+	opacity: 0.65;
+}

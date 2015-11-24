@@ -1,0 +1,15 @@
+.content-area .wpcf7-form-control-wrap {
+	float: left;
+	width: 100%;
+	padding: 0.5em 0;
+}
+
+.wpcf7-list-item {
+	float: left;
+	width: 100%;
+	display: block;
+}
+
+.content-area input {
+	max-width: 100%;
+}

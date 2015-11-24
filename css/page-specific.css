@@ -1,0 +1,199 @@
+.front-page-title {
+	display: none;
+}
+
+.preload-image {
+	position: absolute;
+	left: -999999px;
+	top: -999999px;
+}
+
+.staff,
+.staff .row {
+	float: left;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.staff-member {
+	float: left;
+	display: block;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+.content-area img {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+	border-radius: 6px;
+	/*border: 1px solid rgba(0, 0, 0, 0.95);*/
+	box-sizing: border-box;
+}
+
+.content-area img:hover {
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+	/*border: 1px solid rgba(0, 0, 0, 1);*/
+	transition: all 250ms ease;
+}
+
+iframe {
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+.media-list {
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+
+.media-list .media img {
+	box-shadow: none;
+	border: none;
+	border-radius: 100%;
+}
+
+.media {
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+
+.media-body {
+	float: left;
+	width: 100%;
+}
+
+.media > p {
+	text-align: center;
+}
+
+.media-body {
+	text-align: left;
+}
+
+.panel {
+	float: left;
+	padding: 1em;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+	margin: 0;
+}
+
+.panel-heading {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.3em;
+}
+
+.well {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	padding: 1em;
+	float: left;
+	width: 100%;
+	background-color: rgb(32, 32, 32);
+	color: rgb(250, 250, 250);
+}
+
+.join-us-arrow {
+	text-align: center;
+	font-size: 5em;
+	margin: 0;
+	padding: 0.5em;
+	float: left;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.course-overview h2 {
+	margin: 0.15em 0;
+}
+
+.course-overview picture,
+.course-overview picture:hover,
+.course-overview picture img,
+.course-overview picture img:hover {
+	border: none;
+	padding: 0;
+
+}
+
+.course-overview picture img,
+.course-overview picture img:hover {
+	box-shadow: none;
+	margin: 0;
+}
+
+.course-overview picture {
+	display: block;
+	float: left;
+	width: calc(100% - 1em);
+	margin: 0.5em !important;
+	height: auto;
+	opacity: 0.9;
+	transition: all 200ms ease;
+}
+
+.course-overview picture img {
+	opacity: 1;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+	width: 100%;
+	transition: all 200ms ease;
+}
+
+.course-overview picture:hover {
+	opacity: 1;
+}
+
+.course-overview picture:hover img {
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+	opacity: 1;
+}
+
+.course-overview-link h2 {
+	display: none;
+}
+
+.course-price {
+	text-align: right;
+	width: 60%;
+}
+
+.picture-and-text {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 1em 0;
+}
+
+.picture-and-text h4 {
+	float: none;
+	clear: none;
+}
+
+.swipe-message {
+	color: rgb(48, 48, 48);
+}
+
+footer address {
+	display: none;
+}
+
+/*.youtube-introduction {
+	background: url("/wp-content/themes/nihongo-center-responsive/img/youtube-english-354.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding-top: 38%;
+}
+
+.youtube-introduction:hover {
+	text-decoration: none;
+}*/
