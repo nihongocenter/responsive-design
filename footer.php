@@ -9,7 +9,7 @@
 ?>
 
 	</div><!-- #content -->
-	
+
 	<?php if(!wp_is_mobile()): ?>
 		<footer id="footer-navigation-container">
 			<nav id="footer-navigation" class="footer-navigation" role="navigation">
@@ -18,11 +18,23 @@
 			</nav>
 		</footer>
 	<?php endif; ?>
-	
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info" itemscope itemtype="http://schema.org/EducationalOrganization">
 			&copy; <?php echo date('Y'); ?>
-			<a href="/"><span itemscope itemtype="http://schema.org/Language"><span itemprop="name">Japanese</span></span> School - <span itemprop="name">Nihongo Center</span></a>
+			<a href="/">
+				<?php if(ICL_LANGUAGE_CODE === 'fr'): ?>
+					Ecole de
+					<span itemscope itemtype="http://schema.org/Language">
+						<span itemprop="name">japonais</span>
+					</span> à Kyoto
+				<?php else: ?>
+					<span itemscope itemtype="http://schema.org/Language">
+						<span itemprop="name">Japanese</span>
+					</span> School
+				<?php endif; ?>
+				 - <span itemprop="name">Nihongo Center</span>
+			</a>
 
 			<address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 				<span itemprop="streetAddress">356 Tominaga-cho, South Bukkoh-ji Kawaramachi Street</span>
@@ -33,6 +45,11 @@
 				|
 				<span itemprop="postalCode">600-8023</span>
 			</address>
+
+			<br/>
+			<a href="mailto:support@nihongo-center.com" target="_blank">
+				support@nihongo-center.com
+			</a>
 		</div><!-- .site-info -->
 
 		<div class="social-media">

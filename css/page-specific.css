@@ -8,8 +8,7 @@
 	top: -999999px;
 }
 
-.staff,
-.staff .row {
+.staff {
 	float: left;
 	display: block;
 	width: 100%;
@@ -20,9 +19,39 @@
 .staff-member {
 	float: left;
 	display: block;
-	width: 50%;
-	padding: 0;
 	margin: 0;
+	padding: 0.25em;
+	line-height: 0;
+	transform: scale(0.95);
+	transition: transform 250ms ease;
+}
+
+.staff-member:hover {
+	transform: scale(1.0);
+}
+
+.staff-member img {
+	margin: 0;
+	padding: 0;
+}
+
+.staff-member-name {
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+	.staff-member {
+		margin-top: 1em;
+		width: 100%;
+		text-align: center;
+	}
+
+	.staff-member-name {
+		float: left;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
 }
 
 .content-area img {
@@ -97,6 +126,7 @@ iframe {
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	padding: 1em;
+	margin: 1em 0;
 	float: left;
 	width: 100%;
 	background-color: rgb(32, 32, 32);

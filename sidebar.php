@@ -11,8 +11,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-
 	<!-- Special offer -->
 	<!--<aside class="widget bubble">
 		<h2>Special Offer 2015</h2>
@@ -31,6 +29,13 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			Apply now!
 		<?php } ?>
 	</a>
+
+	<aside class="widget bubble">
+		<h2>Deadline</h2>
+		<div style="text-align: center">
+			October 2016 intensive course registration ends on the <strong>3rd of June</strong>.
+		</div>
+	</aside>
 
 	<!-- Recruitment -->
 	<?php if(ICL_LANGUAGE_CODE == "ja"): ?>
@@ -57,6 +62,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			<img class="sidebar-social-media-icon" src="<?php echo get_template_directory_uri(); ?>/img/social-media/email.png" alt="E-Mail" width="32" height="32">
 		</a>
 	</aside>
+
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
 	<!-- Youtube -->
 	<aside class="widget youtube-introduction bubble">
